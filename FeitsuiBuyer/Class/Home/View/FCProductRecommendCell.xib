@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FCProductRecommendCell">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="K6A-2y-cPw">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="T5o-zs-PIg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqb-6b-7o2">
+                        <rect key="frame" x="0.0" y="214" width="34.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.35184836930000002" blue="0.28536775460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOm-4Q-VIz">
+                        <rect key="frame" x="0.0" y="188" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="OOm-4Q-VIz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ews-Gr-Rjg"/>
+                <constraint firstItem="Oqb-6b-7o2" firstAttribute="top" secondItem="OOm-4Q-VIz" secondAttribute="bottom" constant="8" id="QTQ-mU-fbB"/>
+                <constraint firstItem="K6A-2y-cPw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RiS-ER-zh5"/>
+                <constraint firstAttribute="trailing" secondItem="K6A-2y-cPw" secondAttribute="trailing" id="ZId-Md-pwE"/>
+                <constraint firstItem="Oqb-6b-7o2" firstAttribute="leading" secondItem="OOm-4Q-VIz" secondAttribute="leading" id="mZa-dO-Sqb"/>
+                <constraint firstItem="OOm-4Q-VIz" firstAttribute="top" secondItem="K6A-2y-cPw" secondAttribute="bottom" constant="8" id="suN-U4-48y"/>
+                <constraint firstItem="K6A-2y-cPw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ykk-Hh-G38"/>
+            </constraints>
+            <size key="customSize" width="150" height="149"/>
+            <connections>
+                <outlet property="priceLabel" destination="Oqb-6b-7o2" id="9cH-2G-D5Q"/>
+                <outlet property="productImage" destination="K6A-2y-cPw" id="77J-zK-7bp"/>
+                <outlet property="productName" destination="OOm-4Q-VIz" id="Had-bh-KIN"/>
+            </connections>
+            <point key="canvasLocation" x="-87" y="98"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="banner1.jpg" width="640" height="300"/>
+    </resources>
+</document>

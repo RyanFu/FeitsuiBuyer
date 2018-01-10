@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FCAccountInfomationCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDJ-CB-th2" userLabel="Top">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账户信息" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKO-md-GXK">
+                                <rect key="frame" x="15" y="0.0" width="290" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91372549020000005" green="0.91764705879999997" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lKO-md-GXK" firstAttribute="leading" secondItem="kDJ-CB-th2" secondAttribute="leading" constant="15" id="MEt-tu-G5E"/>
+                            <constraint firstAttribute="trailing" secondItem="lKO-md-GXK" secondAttribute="trailing" constant="15" id="cjx-qG-8eH"/>
+                            <constraint firstAttribute="bottom" secondItem="lKO-md-GXK" secondAttribute="bottom" id="myh-2Z-Chx"/>
+                            <constraint firstItem="lKO-md-GXK" firstAttribute="top" secondItem="kDJ-CB-th2" secondAttribute="top" id="uxK-dS-GaG"/>
+                            <constraint firstAttribute="height" constant="30" id="z6T-rY-G5I"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHw-Z8-3jE" userLabel="Bottom">
+                        <rect key="frame" x="0.0" y="30" width="320" height="169.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="银行持卡人：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paI-ff-HrP" userLabel="银行持卡人1：">
+                                <rect key="frame" x="15" y="8" width="74" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fN0-5V-qAh" userLabel="账号1：">
+                                <rect key="frame" x="15" y="25.5" width="37" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="银行持卡人：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lra-5c-TRV" userLabel="银行持卡人2：">
+                                <rect key="frame" x="15" y="43" width="74" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuj-oO-2kT" userLabel="账号2：">
+                                <rect key="frame" x="15" y="60.5" width="37" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付宝姓名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHw-VG-LR7" userLabel="支付宝姓名1：">
+                                <rect key="frame" x="15" y="80.5" width="74" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付宝姓名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhe-OD-tnV" userLabel="支付宝姓名2：">
+                                <rect key="frame" x="15" y="98" width="74" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开户行：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kj7-9Y-bvM" userLabel="开户行1：">
+                                <rect key="frame" x="165" y="8" width="50" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开户行：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoA-A6-M5Q" userLabel="开户行2：">
+                                <rect key="frame" x="165" y="43" width="50" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLF-Mi-bSW" userLabel="账号2：">
+                                <rect key="frame" x="165" y="98" width="37" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trr-rS-rcG" userLabel="账号1：">
+                                <rect key="frame" x="165" y="80.5" width="37" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kj7-9Y-bvM" firstAttribute="top" secondItem="paI-ff-HrP" secondAttribute="top" id="3bC-NR-NqR"/>
+                            <constraint firstItem="NHw-VG-LR7" firstAttribute="leading" secondItem="paI-ff-HrP" secondAttribute="leading" id="5hg-ZF-wES"/>
+                            <constraint firstItem="wuj-oO-2kT" firstAttribute="leading" secondItem="paI-ff-HrP" secondAttribute="leading" id="7w7-Cg-wde"/>
+                            <constraint firstItem="paI-ff-HrP" firstAttribute="leading" secondItem="dHw-Z8-3jE" secondAttribute="leading" constant="15" id="Gen-oZ-SIK"/>
+                            <constraint firstItem="trr-rS-rcG" firstAttribute="top" secondItem="NHw-VG-LR7" secondAttribute="top" id="N7r-cM-MFt"/>
+                            <constraint firstItem="fhe-OD-tnV" firstAttribute="top" secondItem="NHw-VG-LR7" secondAttribute="bottom" constant="3" id="QNr-xE-Ox3"/>
+                            <constraint firstItem="wuj-oO-2kT" firstAttribute="top" secondItem="Lra-5c-TRV" secondAttribute="bottom" constant="3" id="Rbd-UV-DGP"/>
+                            <constraint firstItem="trr-rS-rcG" firstAttribute="leading" secondItem="kj7-9Y-bvM" secondAttribute="leading" id="StS-DA-JUF"/>
+                            <constraint firstItem="paI-ff-HrP" firstAttribute="top" secondItem="dHw-Z8-3jE" secondAttribute="top" constant="8" id="Y4Y-ZB-qzi"/>
+                            <constraint firstItem="fhe-OD-tnV" firstAttribute="leading" secondItem="paI-ff-HrP" secondAttribute="leading" id="YZm-jj-j8V"/>
+                            <constraint firstItem="NHw-VG-LR7" firstAttribute="top" secondItem="wuj-oO-2kT" secondAttribute="bottom" constant="5" id="ZPG-f9-vBb"/>
+                            <constraint firstItem="bLF-Mi-bSW" firstAttribute="top" secondItem="fhe-OD-tnV" secondAttribute="top" id="aTQ-Ug-VPv"/>
+                            <constraint firstItem="kj7-9Y-bvM" firstAttribute="centerX" secondItem="dHw-Z8-3jE" secondAttribute="centerX" constant="30" id="agu-Fw-Rwi"/>
+                            <constraint firstItem="YoA-A6-M5Q" firstAttribute="top" secondItem="Lra-5c-TRV" secondAttribute="top" id="ccM-9t-Cu5"/>
+                            <constraint firstItem="bLF-Mi-bSW" firstAttribute="leading" secondItem="kj7-9Y-bvM" secondAttribute="leading" id="d0J-kL-ckO"/>
+                            <constraint firstItem="Lra-5c-TRV" firstAttribute="top" secondItem="fN0-5V-qAh" secondAttribute="bottom" constant="3" id="faj-Gq-oFc"/>
+                            <constraint firstItem="YoA-A6-M5Q" firstAttribute="leading" secondItem="kj7-9Y-bvM" secondAttribute="leading" id="gJ4-vH-Uez"/>
+                            <constraint firstAttribute="bottom" secondItem="fhe-OD-tnV" secondAttribute="bottom" constant="57" id="ibu-LF-Zba"/>
+                            <constraint firstItem="Lra-5c-TRV" firstAttribute="leading" secondItem="paI-ff-HrP" secondAttribute="leading" id="oBl-5n-GDl"/>
+                            <constraint firstItem="fN0-5V-qAh" firstAttribute="top" secondItem="paI-ff-HrP" secondAttribute="bottom" constant="3" id="qtQ-ep-tdT"/>
+                            <constraint firstItem="fN0-5V-qAh" firstAttribute="leading" secondItem="paI-ff-HrP" secondAttribute="leading" id="wa2-rz-6Kv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="dHw-Z8-3jE" secondAttribute="bottom" id="5Av-k6-gqw"/>
+                    <constraint firstAttribute="trailing" secondItem="dHw-Z8-3jE" secondAttribute="trailing" id="9ms-HE-SzW"/>
+                    <constraint firstItem="dHw-Z8-3jE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Eoh-uX-uVo"/>
+                    <constraint firstAttribute="trailing" secondItem="kDJ-CB-th2" secondAttribute="trailing" id="R4n-bU-8cZ"/>
+                    <constraint firstItem="kDJ-CB-th2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="X0u-Od-Em5"/>
+                    <constraint firstItem="dHw-Z8-3jE" firstAttribute="top" secondItem="kDJ-CB-th2" secondAttribute="bottom" id="fOO-T3-Pg8"/>
+                    <constraint firstItem="kDJ-CB-th2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qXb-Vp-IXI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="accountNameLabel" destination="paI-ff-HrP" id="qzX-kx-COv"/>
+                <outlet property="accountNumberLabel" destination="fN0-5V-qAh" id="Akd-F8-IuQ"/>
+                <outlet property="bankNameLabel" destination="kj7-9Y-bvM" id="EMK-Xr-Y2V"/>
+                <outlet property="secondAccountNameLabel" destination="Lra-5c-TRV" id="fUp-JR-MNv"/>
+                <outlet property="secondAccountNumberLabel" destination="wuj-oO-2kT" id="amV-fG-hgh"/>
+                <outlet property="secondBankNameLabel" destination="YoA-A6-M5Q" id="nU7-Dh-nLN"/>
+                <outlet property="secondZfbNameLabel" destination="fhe-OD-tnV" id="fOK-vm-ySC"/>
+                <outlet property="secondZfbNumberLabel" destination="bLF-Mi-bSW" id="ksn-IE-bKA"/>
+                <outlet property="zfbNameLabel" destination="NHw-VG-LR7" id="8XP-aJ-Xws"/>
+                <outlet property="zfbNumberLabel" destination="trr-rS-rcG" id="UQl-Im-59h"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

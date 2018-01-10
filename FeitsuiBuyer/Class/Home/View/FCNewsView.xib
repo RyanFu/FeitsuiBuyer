@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FCNewsView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xG8-oG-32a">
+                    <rect key="frame" x="8" y="23.5" width="20" height="33.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Drd-WS-ija"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hmh-a4-w8v">
+                    <rect key="frame" x="31" y="15" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="L1j-nv-cft"/>
+                        <constraint firstAttribute="width" constant="50" id="Rhc-bJ-4vN"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="莲叶莲叶莲叶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYm-9C-4d6" userLabel="莲叶莲叶莲叶1">
+                    <rect key="frame" x="89" y="15" width="61.5" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="莲叶莲叶莲叶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJr-TG-7qz" userLabel="莲叶莲叶莲叶2">
+                    <rect key="frame" x="89" y="34" width="61.5" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="莲叶莲叶莲叶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MF7-RN-K9d" userLabel="莲叶莲叶莲叶3">
+                    <rect key="frame" x="89" y="53" width="61.5" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xG8-oG-32a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="0Tg-U1-LY8"/>
+                <constraint firstItem="xG8-oG-32a" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9A4-rT-6yS"/>
+                <constraint firstItem="hmh-a4-w8v" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9vW-bv-jfF"/>
+                <constraint firstItem="MF7-RN-K9d" firstAttribute="bottom" secondItem="hmh-a4-w8v" secondAttribute="bottom" id="OKh-FU-ZA6"/>
+                <constraint firstItem="kJr-TG-7qz" firstAttribute="leading" secondItem="hmh-a4-w8v" secondAttribute="trailing" constant="8" id="PLj-Xj-5uW"/>
+                <constraint firstItem="MF7-RN-K9d" firstAttribute="leading" secondItem="hmh-a4-w8v" secondAttribute="trailing" constant="8" id="RUL-Dx-Qgg"/>
+                <constraint firstItem="kJr-TG-7qz" firstAttribute="centerY" secondItem="hmh-a4-w8v" secondAttribute="centerY" id="Sfo-GT-Ikc"/>
+                <constraint firstItem="GYm-9C-4d6" firstAttribute="leading" secondItem="hmh-a4-w8v" secondAttribute="trailing" constant="8" id="Uqn-gJ-YLm"/>
+                <constraint firstItem="hmh-a4-w8v" firstAttribute="leading" secondItem="xG8-oG-32a" secondAttribute="trailing" constant="3" id="V1c-m2-fC8"/>
+                <constraint firstItem="GYm-9C-4d6" firstAttribute="top" secondItem="hmh-a4-w8v" secondAttribute="top" id="ffB-TF-exp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImage" destination="hmh-a4-w8v" id="PoX-Ik-tWp"/>
+                <outlet property="newsLabel1" destination="GYm-9C-4d6" id="GF3-Rk-C8a"/>
+                <outlet property="newsLabel2" destination="kJr-TG-7qz" id="dRL-W5-F09"/>
+                <outlet property="newsLabel3" destination="MF7-RN-K9d" id="7lB-KE-YGB"/>
+                <outlet property="titleNameLabel" destination="xG8-oG-32a" id="uYU-iJ-4xB"/>
+            </connections>
+            <point key="canvasLocation" x="-629" y="16"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="9.jpg" width="814" height="980"/>
+    </resources>
+</document>
